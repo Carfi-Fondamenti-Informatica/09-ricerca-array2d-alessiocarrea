@@ -7,9 +7,9 @@ bool funzione (char Array[10][20], char Array2[20], int &pos) {
            j=20;
          } else if (j==19) {
              pos=i;
-             return 1;
+             return true;
          }
       }
   }
-  return 0;
+  return false;
 }
