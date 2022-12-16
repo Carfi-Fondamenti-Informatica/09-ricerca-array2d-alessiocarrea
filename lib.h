@@ -1,1 +1,1 @@
-bool funzione (char [10][20], char[20], int &pos)
+bool funzione (char [10][20], char[20], int &pos);
