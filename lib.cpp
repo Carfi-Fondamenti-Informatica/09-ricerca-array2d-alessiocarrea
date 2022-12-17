@@ -1,15 +1,15 @@
 #include "lib.h"
 
-bool funzione (char Array1[10][20], char Array2[20], int &pos) {
-for (int a=0; a<10; a++) {
-for (int b=0; b<20; b++) {
-if (Array2[b]!=Array1[a][b]) {
-b=20;
-} else if (b==19) {
-pos=a;
-return true;
-}
-}
-}
-return false;
+int funzione (char lista[10][20], char nome[20]) {
+    int a=0;
+    int b=0;
+    while ((b < 19) and (a < 10)) {
+        if (lista[a][b]! = nome[b]) {
+            a++;
+            b = 0;
+        } else if (lista[a][b] == nome[b]) {
+            b++;
+        }
+    }
+    return a;
 }
